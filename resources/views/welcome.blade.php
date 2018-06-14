@@ -53,7 +53,7 @@
         }
 
         .links>a {
-            color: #636b6f;
+            color: #ffffff;
             padding: 0 25px;
             font-size: 12px;
             font-weight: 600;
@@ -76,12 +76,13 @@
         @if (Route::has('login'))
         <div class=" links pt-3">
             @if (Auth::check())
-            <a href="{{ url('/home') }}">Trang chủ</a>
+            <a href="{{ url('/home') }}">DOITHE24H</a>
             <a href="{{url('/logout')}}">Đăng xuất</a>
             @else
+            <a href="{{ url('/home') }}">DOITHE24H</a>
             <a href="{{ url('/login') }}">Đăng nhập</a>
             <a href="{{ url('/register') }}">Đăng ký</a>
-            <p class="alert alert-danger">Xin đăng nhập hoặc đăng kí trước khi nạp thẻ</p>
+            <p class="alert alert-danger">Bạn không thể nạp thể nếu chưa Đăng nhập .Xin đăng nhập hoặc đăng kí trước khi nạp thẻ</p>
             @endif
         </div>
         @endif
@@ -92,7 +93,7 @@
                     <h5 class="card-title">Liên hệ - Hỗ trợ</h5>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Hotline: 098.316.0666</li>
+                    <li class="list-group-item">Hotline: 088.645.9999</li>
                     <li class="list-group-item">Email: phuonglien210193@gmail.com</li>
                     <li class="list-group-item">Trụ sở :Số 68- TT Hợp Hòa- Tam Dương- Vĩnh Phúc</li>
                     <li class="list-group-item">Thẻ ngân hàng : Vietcombank</br> 
@@ -109,7 +110,7 @@
                     <div class="d-flex flex-md-row flex-column ">
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="loaithe" value="Viettel">
+                                <input type="radio" class="form-check-input" name="loaithe" value="Viettel" checked>
                                 <img src="{{asset('/image/vt.png')}}">
                             </label>
                         </div>
@@ -132,9 +133,8 @@
                     <div class="input-group mb-3">
 
                         <label class="input-group-text" for="inputGroupSelect01"> Mệnh giá</label>
-                        <select class="" id="inputGroupSelect01" name="menhgia">
-                            <option value="0">Chọn mệnh giá</option>
-                            <option value="10000">10.000</option>
+                        <select class="" id="inputGroupSelect01" name="menhgia" required>
+                            <option value="">Chọn mệnh giá</option>
                             <option value="20000">20.000</option>
                             <option value="30000">30.000</option>
                             <option value="50000">50.000</option>
@@ -176,9 +176,9 @@
                     <h5 class="card-title">Khuyến mãi</h5>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Chiết khấu trả về 35%</li>
-                    <li class="list-group-item">Bảo mật tuyệt đối thông tin của khách hàng</li>
-                    <li class="list-group-item">Rút tiền mặt khi số tài khoản trong thẻ lớn</li>
+                    <li class="list-group-item">Chiết khấu trả về 35%.</li>
+                    <li class="list-group-item">Bảo mật tuyệt đối thông tin của khách hàng.</li>
+                    <li class="list-group-item">Rút tiền mặt nhanh chóng 24/24 , nhận tiền vào tài khoẳn ngân hàng hoặc ví momo sau 2 phút .</li>
                 </ul>
             </div>
             </div>

@@ -5,6 +5,7 @@
     line-height: 30px;
     background-color: #012b72;
     border-top: 1px solid #ccc;
+    color: #ffffff;
 }
 form {
     border: 1px solid #ccc;
@@ -15,6 +16,8 @@ form {
 }
 body{
     background-image: url(../image/bg.jpg);
+    background-repeat: no-repeat; 
+    background-size: 100%;
 }
 .links{
     background-color: #012b72;
