@@ -1,0 +1,23 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 30px;
+    background-color: #012b72;
+    border-top: 1px solid #ccc;
+}
+form {
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.card{
+    border: 3px solid rgba(0,0,0,.125);
+}
+body{
+    background-image: url(../image/bg.jpg);
+}
+.links{
+    background-color: #012b72;
+    height: 64px;
+
+}

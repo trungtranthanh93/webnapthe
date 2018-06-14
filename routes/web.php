@@ -17,7 +17,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', function () {
+    return view('welcome');
+});
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::post('/sendInfor', 'MailController@sendInfor')->name('sendInfor');
 
